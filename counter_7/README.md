@@ -34,7 +34,7 @@ setState() merupakan sebuah fungsi yang berguna untuk memberitahu widget bahwa a
 
 # Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
-1.Awalnya saya Membuat program Flutter dengan menjalankan perintah "flutter create counter_7" didalam repositori repo-tugas-pbp
+ 1.Awalnya saya Membuat program Flutter dengan menjalankan perintah "flutter create counter_7" didalam repositori repo-tugas-pbp
 
 2. Lalu membuat variabel counter pada class _MyHomePageState_ untuk menampilkan angka pada aplikasi
 
