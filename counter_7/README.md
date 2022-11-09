@@ -13,8 +13,8 @@ Stateful Widget merupakan widget yang dinamis atau dapat berubah. Berbanding ter
 Merujuk pada contoh kasus sebelumnya dengan text “Buku yang dibaca : 1”, maka di stateful widget kita dapat merubah text tersebut sesuai kebutuhan. Contoh penggunaannya adalah penggunaan fungsi setState() yang akan bertugas untuk memberitahu widget bahwa ada object yang berubah pada State, sehingga akan melakukan build ulang pada Widget tertentu tersebut.
 
 ## Perbedaan
-1. Statless widget bersifat stagnan, sedangkan stateful widget bersifat dinamis.
-2. Statless widget lebih cocok digunakan pada tampilan aplikasi yang tidak memerlukan perubahan tampilan, sedangkan stateful widget lebih cocok digunakan untuk tampilan aplikasi yang memerlukan adanya perubahan. 
+1. Stateless widget bersifat stagnan, sedangkan stateful widget bersifat dinamis.
+2. Stateless widget lebih cocok digunakan pada tampilan aplikasi yang tidak memerlukan perubahan tampilan, sedangkan stateful widget lebih cocok digunakan untuk tampilan aplikasi yang memerlukan adanya perubahan. 
 3. Penggunaan setState() hanya dapat diaplikasikan pada stateful widget.
 
 # Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
@@ -34,9 +34,14 @@ setState() merupakan sebuah fungsi yang berguna untuk memberitahu widget bahwa a
 
 # Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 1.Awalnya saya Membuat program Flutter dengan menjalankan perintah "flutter create counter_7" didalam repositori repo-tugas-pbp
+
 2. Lalu membuat variabel counter pada class _MyHomePageState_ untuk menampilkan angka pada aplikasi
+
 3. Lalu membuat method _decrementCounter() sama seperti _incrementCounter() yang sebelumnya sudah ada saat kita membuat app baru, namun bedanya method ini akan mengurangi nilai pada counter. Ketika counter akan dikurangi dan menghasilkan -1 maka counter akan diset menjadi 0 (0 merupakan nilai maksimal decrement counter). Proses decrement variabel dilakukan dalam fungsi setState().
+
 4. Lalu saya Membuat isi field FloatingAcitonButton sesuai dengan kebutuhan proyek, yaitu berisi 2 buah button dimana terdapat button decrement di kiri bawah dan button increment di kanan bawah. Kedua button tersebut juga disambungkan dengan properti onPressed. Dan membuat layout di dalam mainAxisAlignment menggunakan Padding.
+
 5. Bind decrement functionnya pada onPressed props di button decrement dan bind function increment pada onPressed props di button increment dan bind iconnya dengan icons.remove untuk decrement dan icons.add untuk increment.
+
 6. Membuat widget Text dan tambahkan handler if else, ketika counter genap maka keluarkan Text Genap, else Text Ganjil
  
