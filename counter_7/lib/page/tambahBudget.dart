@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:counter_7/lihatBudget.dart';
+import 'package:flutter/cupertino.dart';
+
 import 'package:counter_7/main.dart';
+import 'package:counter_7/page/lihatBudget.dart';
+import 'package:counter_7/page/tambahBudget.dart';
+import 'package:counter_7/page/lihatWatchlist.dart';
+
 
 class dataBudget {
   static List<dataBudget> databudget = [];
@@ -80,6 +85,16 @@ class _MyFormPageState extends State<MyFormPage> {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) => const showBudget()),
+                  );
+                },
+              ),
+              ListTile(
+                title: const Text('My Watchlist'),
+                onTap: () {
+                  // Route menu ke halaman to do
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const WatchlistPage()),
                   );
                 },
               ),

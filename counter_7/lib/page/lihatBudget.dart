@@ -1,5 +1,7 @@
-import 'package:counter_7/tambahBudget.dart';
 import 'package:counter_7/main.dart';
+import 'package:counter_7/page/lihatBudget.dart';
+import 'package:counter_7/page/tambahBudget.dart';
+import 'package:counter_7/page/lihatWatchlist.dart';
 import 'package:flutter/material.dart';
 
 class showBudget extends StatefulWidget {
@@ -49,6 +51,16 @@ class _showBudgetState extends State<showBudget> {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) => const showBudget()),
+                  );
+                },
+              ),
+              ListTile(
+                title: const Text('My Watchlist'),
+                onTap: () {
+                  // Route menu ke halaman to do
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const WatchlistPage()),
                   );
                 },
               ),
