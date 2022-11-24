@@ -83,4 +83,35 @@ Navigator bekerja seperti tipe data stack, dimana ketika sebuah layer di-push, m
 3. Menambahkan data yang dibuat kedalam list yang ada di dalam model dataBudget melalui sebuah method yang ada di dalam model dataBudget dengan pembuatan form dan form fields yang dibutuhkan (textform, dropdown);
 4. Menampilkan data yang sudah dibuat dalam model dengan mengakses model dan melakukan for loop dengan batas panjang model dataBudget atau dataBudget.len.
 
+# TUGAS 9
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Bisa saja namun hal ini akan mnyusahkan kita pada saat pengaksesan data sehingga kode dan implementasi pengaksesan tidak se-efisien dengan membuat model terlebih dahulu.
+
+## Widget yang digunakan
+* FutureBuilder : membuat widget saat kita menangkap data
+* SizedBox : Kotak untuk positioning
+* Text : membuat widget text
+* ListView : List widget
+* MaterialPageRoute : mengganti tampilan
+* Container : Menampung widget
+* Column : Container berbasis kolom
+* ElevatedButton: Buat button di bawah
+
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+* add dependancy http
+* (Optional) Membuat model dari data yang akan di GET
+* Membuat HTTP Request untuk GET
+* GET yang didapat diubah menjadi model yang sudah dibuat sebelumnya 
+* FutureBuilder -> Membuat widget / component yang menggunakan data yang diGET setelah data sukses diGET
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+1. Menambahkan dependancy http dan menginstall dengan flutter pub http
+2. Membuat model Watchlist
+3. Membuat page WatchListPage
+4. Menambahkan watchlist ke drawer
+5. Membuat file untuk fetchData dari url
+6. Melakukan fetch dengan futureBuilder di watchlist Page
+7. Data yang diambil akan diloop dengan item builder dan membentuk komponen seperti card
+8. Membuat navigator push yang akan menampilkan detail dari film yang diGET ketika card dipencet
+
  
