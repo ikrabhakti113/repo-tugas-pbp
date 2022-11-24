@@ -71,33 +71,33 @@ class WatchlistDetail extends StatelessWidget{
             child: Column(
                 children: [
                     Center(
-                        child: Text(watchlist.movieTitle,)
+                        child: Text(watchlist.fields.movieTitle,)
                     ),
                     Row(
                         children: [
                             Text("Release Date : "),
-                            Text(watchlist.releaseDate.toString())
+                            Text(watchlist.fields.releaseDate.toString())
                         ]
                     ),
                     Row(
                         children: [
                             Text("Rating : "),
-                            Text(watchlist.movieRate.toString())
+                            Text(watchlist.fields.movieRate.toString())
                         ]
                     ),
                     Row(
                         children: [
                             Text("Status : "),
-                            if(watchlist.watchedMovie)
+                            if(watchlist.fields.watchedMovie == WatchedMovie.SUDAH)
                                 Text("Sudah"),
-                            if(!watchlist.watchedMovie)
+                            if(watchlist.fields.watchedMovie == WatchedMovie.BELUM)
                                 Text("Belum")
                         ]
                     ),
                     Row(
                         children: [
                             Text("Review : "),
-                            Text(watchlist.movieReview)
+                            Text(watchlist.fields.movieReview)
                         ]
                     ),
 

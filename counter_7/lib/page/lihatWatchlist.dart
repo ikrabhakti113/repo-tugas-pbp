@@ -133,7 +133,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              "${snapshot.data![index].movieTitle}",
+                              "${snapshot.data![index].fields.movieTitle}",
                               style: const TextStyle(
                                 fontSize: 18.0,
                                 fontWeight: FontWeight.bold,
